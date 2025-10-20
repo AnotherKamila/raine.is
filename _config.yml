@@ -1,11 +1,10 @@
 # === the basics ===
-url: https://kamila.is/
-title: kamila.is
-email: kamila@ksp.sk
+url: https://raine.is/
+title: raine.is
+email: me@kamila.is
 permalink: /:categories/:title/
-repository: anotherkamila/kamila.is
+repository: anotherkamila/raine.is
 github_username:  anotherkamila
-twitter_username: anotherkamila
 
 # === defaults ===
 defaults:
