@@ -5,9 +5,11 @@ subtitle: Your data is your business, I don't want it.
 
 _Last Updated: February 2026_
 
-**TL;DR: Aranet4Wear operates entirely on your watch, processing sensor
-data locally with absolutely no data collection, tracking, or
-third-party sharing.**
+**TL;DR:
+Aranet4Wear is an open-source, local-only utility that processes sensor
+data entirely on your device with zero data collection, tracking, or
+cloud connectivity.
+**
 
 Your data is your business, I don't want it. This Privacy Policy
 explains how I handle your information (spoiler: I don't).
@@ -44,6 +46,13 @@ Since we don't collect any data, we have nothing to sell, trade, or share with a
 
 If I ever decide to change how the app works, I will update this policy.
 But given my opinions about sending data to the cloud, don't expect much to change.
+
+### 6. Open Source & Transparency
+
+Aranet4Wear is open-source software. The source code is available for
+public audit. You (or anyone else) can verify that the app handles data
+exactly as described in this policy by visiting the repository at
+[sr.ht/~raine/Aranet4Wear](https://sr.ht/~raine/Aranet4Wear).
 
 ### Contact
 
