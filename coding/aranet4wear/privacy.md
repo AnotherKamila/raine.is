@@ -8,8 +8,7 @@ _Last Updated: February 2026_
 **TL;DR:
 Aranet4Wear is an open-source, local-only utility that processes sensor
 data entirely on your device with zero data collection, tracking, or
-cloud connectivity.
-**
+cloud connectivity.**
 
 Your data is your business, I don't want it. This Privacy Policy
 explains how I handle your information (spoiler: I don't).
