@@ -11,14 +11,18 @@ Gives haptic feedback on CO2 level changes (green/yellow/red as configured on th
 
 ⚠️⚠️⚠️⚠️⚠️⚠️ **IN DEVELOPMENT, NOT FINISHED, HAS KNOWN ISSUES** ⚠️⚠️⚠️⚠️⚠️⚠️
 
-[Early testing: install from Google Play](https://play.google.com/apps/test/is.raine.aranet4wear/36000200)  
+[Early testing: install from Google Play](https://play.google.com/apps/internaltest/4699298202982374471)  
 [Source Code](https://sr.ht/~raine/Aranet4Wear)  
 [Privacy Policy](privacy) (TL;DR: Entirely local, does not collect any data)  
+
+[Releases + APKs](https://git.sr.ht/~raine/Aranet4Wear/refs/)  
 
 ### Known issues
 
 - Does not yet show a visual indication of stale readings when it fails to refresh.
 - Allows you to select any Aranet device, but currently only works with the Aranet4 CO2 sensor.
+
+[Report bug or request a feature](https://todo.sr.ht/~raine/Aranet4Wear)
 
 ### Planned features
 
