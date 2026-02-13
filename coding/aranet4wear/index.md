@@ -9,20 +9,33 @@ Lets you select an Aranet4 device and displays its reading.
 Stays open in ambient mode, so you can use it as an "alternative watch face".  
 Gives haptic feedback on CO2 level changes (green/yellow/red as configured on the sensor through the Aranet Home app).  
 
-⚠️⚠️⚠️⚠️⚠️⚠️ **IN DEVELOPMENT, NOT FINISHED, HAS KNOWN ISSUES** ⚠️⚠️⚠️⚠️⚠️⚠️
+⚠️⚠️⚠️ **IN DEVELOPMENT, NOT FINISHED, HAS KNOWN ISSUES** ⚠️⚠️⚠️
 
-[Early testing: install from Google Play](https://play.google.com/apps/internaltest/4699298202982374471)  
-[Source Code](https://sr.ht/~raine/Aranet4Wear)  
-[Privacy Policy](privacy) (TL;DR: Entirely local, does not collect any data)  
+[Source Code on sr.ht](https://sr.ht/~raine/Aranet4Wear)
 
-[Releases + APKs](https://git.sr.ht/~raine/Aranet4Wear/refs/)  
+### Installation
+
+The app is currently in early testing on Google play.
+[Join the early testing program
+here](https://play.google.com/apps/internaltest/4699298202982374471).
+If it says you need an invite, email me with your Google account at
+[~raine/dev@lists.sr.ht](mailto:~raine/dev@lists.sr.ht).
+
+If you prefer, you can instead install an APK from the
+[Releases + APKs](https://git.sr.ht/~raine/Aranet4Wear/refs/), but this
+is annoying on the watch.
+
+[Privacy Policy](privacy) (TL;DR: Entirely local, does not collect any
+data.)
 
 ### Known issues
 
 - Does not yet show a visual indication of stale readings when it fails to refresh.
 - Allows you to select any Aranet device, but currently only works with the Aranet4 CO2 sensor.
 
-[Report bug or request a feature](https://todo.sr.ht/~raine/Aranet4Wear)
+[Report bug or request a feature on
+sr.ht](https://todo.sr.ht/~raine/Aranet4Wear) or 
+email me at [~raine/dev@lists.sr.ht](mailto:~raine/dev@lists.sr.ht).
 
 ### Planned features
 
