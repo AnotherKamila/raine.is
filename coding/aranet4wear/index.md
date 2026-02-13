@@ -11,7 +11,7 @@ Gives haptic feedback on CO2 level changes (green/yellow/red as configured on th
 
 ⚠️⚠️⚠️ **IN DEVELOPMENT, NOT FINISHED, HAS KNOWN ISSUES** ⚠️⚠️⚠️
 
-[Source Code on sr.ht](https://sr.ht/~raine/Aranet4Wear)
+[Source Code on sr.ht](https://sr.ht/~raine/aranet4wear)
 
 ### Installation
 
@@ -22,7 +22,7 @@ If it says you need an invite, email me with your Google account at
 [~raine/dev@lists.sr.ht](mailto:~raine/dev@lists.sr.ht).
 
 If you prefer, you can instead install an APK from the
-[Releases + APKs](https://git.sr.ht/~raine/Aranet4Wear/refs/), but this
+[Releases + APKs](https://git.sr.ht/~raine/aranet4wear/refs/), but this
 is annoying on the watch.
 
 [Privacy Policy](privacy) (TL;DR: Entirely local, does not collect any
@@ -34,13 +34,13 @@ data.)
 - Allows you to select any Aranet device, but currently only works with the Aranet4 CO2 sensor.
 
 [Report bug or request a feature on
-sr.ht](https://todo.sr.ht/~raine/Aranet4Wear) or 
+sr.ht](https://todo.sr.ht/~raine/aranet4wear) or 
 email me at [~raine/dev@lists.sr.ht](mailto:~raine/dev@lists.sr.ht).
 
 ### Planned features
 
 See the TODO list in the [source code
-README](https://sr.ht/~raine/Aranet4Wear).
+README](https://sr.ht/~raine/aranet4wear).
 
 ### Contact
 
