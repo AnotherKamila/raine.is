@@ -33,8 +33,7 @@ The app may request the following permissions necessary to function:
 - **Location (Android requirement):** Older versions of Android require
   location access to scan for Bluetooth devices. This is never stored or
   used to track you.
-- **Notifications:** Used to show the CO2 value in an Ongoing
-  Notification, and to alert on high CO2 levels. These alerts are
+- **Notifications:** Used to alert on high CO₂ levels. These alerts are
   generated locally on your device.
 
 ### 4. Third-Party Sharing
@@ -51,9 +50,10 @@ But given my opinions about sending data to the cloud, don't expect much to chan
 Aranet4Wear is open-source software. The source code is available for
 public audit. You (or anyone else) can verify that the app handles data
 exactly as described in this policy by visiting the repository at
-[sr.ht/~raine/Aranet4Wear](https://sr.ht/~raine/Aranet4Wear).
+[sr.ht/~raine/aranet4wear](https://sr.ht/~raine/aranet4wear).
 
 ### Contact
 
 If you have questions, feel free to reach out via
 [~raine/dev@lists.sr.ht](mailto:~raine/dev@lists.sr.ht).
+
