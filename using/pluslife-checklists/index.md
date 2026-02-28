@@ -5,7 +5,11 @@ title: Pluslife Checklists
 This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
-# Strep A
+Steps marked with #test-type only apply for that particular test type
+(yes, I will write some code for it someday). Those are:
+
+- #strep: Strep A
+- #flu: Influenza A/Influenza B/RSV
 
 0. Prepare materials
    - enough flat and clean surface, out of direct sunlight, at ~room
@@ -15,6 +19,7 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
    - + card/vial stand
    - reaction card
    - #strep + nucleic acid releasing agent **02** vial
+   - #flu + nucleic acid releasing agent **01** vial
    - + vial cap
    - + sampling swab
    - + waste bag
@@ -27,10 +32,15 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
    - Press the button on the front to start warm-up (about 2 min)
 2. Collect sample
    - Wait 30min after eating/drinking.
+   - Wash or disinfect your hands.
    - #strep **Oropharyngeal** swab: swipe at least 3 times each from the
      posterior pharynx and tonsils.
+   - #flu **Nasal** swab: rotate 3x in each nostril. Nasopharyngeal and
+     oropharyngeal swab also OK.
 3. Prepare sample
    - Put on goggles -- the liquid is corrosive.
+   - Open the vial. When discarding the seal, remember the liquid is
+     corrosive.
    - Rotate the swab while pinching the vial 10 times.
    - Dispose of the swab.
    - Screw on the cap.
@@ -40,12 +50,13 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
      rest while standing upright.
 3. Prepare the reaction card
    - Do not touch the surface of the test chambers on the card.
-   - Open the card packaging now. Avoid exposing the card to bright
+   - Open the card packaging now. Be careful to only handle the card by
+     the edges so you don't accidentally touch the chambers. Avoid exposing the card to bright
      light for extended periods.
    - Unscrew cap from card.
    - From this point you are on the clock. If you wait too long, you will get an invalid or false result.
 3. Transfer sample to the reaction card
-   - Slowly drip the vial solution on the tube inside wall of the
+   - Slowly drip the vial solution on the inside wall of the neck of
      card, until the liquid is BETWEEN the two lines.
    - Screw on the cap until airtight. If it is not screwed on correctly,
      unscrew and try again.
@@ -63,6 +74,7 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
      (Check that power LED is solid blue; if flashing red means still warming up)
    - Connect the analyzer to the virus.sucks app.
    - #strep Select the Strep A test in the app.
+   - #flu Select the Influenza A/Influenza B/RSV test in the app.
    - Insert the card into the analyzer and close the lid.
    - Start the test **from the app**.
    - Make sure the screen stays on while the test is running.
