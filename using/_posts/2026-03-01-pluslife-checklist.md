@@ -85,7 +85,6 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
     const updateChecklistSectionState = (section) => {
       const checkboxes = section.querySelectorAll('input[type="checkbox"]');
       const allChecked = Array.from(checkboxes).every((checkbox) => checkbox.checked);
-      console.log('allChecked:', allChecked)
 
       section.classList.toggle('complete', allChecked);
 
@@ -100,8 +99,7 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
             sections[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
 
             // ...set location.hash
-            const heading = sections[i].querySelector('h3[id]');
-            location.hash = '#' + heading.id;
+            location.hash = '#' + sections[i].id;
 
             // ...and update keyboard focus
             sections[i].querySelector('input[type="checkbox"]').focus();
