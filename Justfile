@@ -8,7 +8,7 @@ serve: setup
     bundle exec jekyll serve --livereload
     
 setup:
-    bundle setup
+    bundle install
     
 check-data:
     cd _data && just check-all

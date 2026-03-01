@@ -55,7 +55,7 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
                   {% assign item_main = item_display | split: '|' | first | strip %}
                   {% assign item_detail = item_display | split: '|' | last | strip %}
                 {% endif %}
-                {% capture checkbox_id %}checklist-{{ forloop.parentloop.index }}-{{ forloop.index }}{% endcapture %}
+                {% capture checkbox_id %}checklist-{{ test_id }}-{{ forloop.parentloop.index }}-{{ forloop.index }}{% endcapture %}
                 <li>
                   <input type="checkbox" id="{{ checkbox_id }}">
                   <label for="{{ checkbox_id }}">
