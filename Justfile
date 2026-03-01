@@ -1,14 +1,14 @@
 _default:
     @just --list --unsorted
 
-build: install
-    @bundle exec jekyll build
+build: setup
+    bundle exec jekyll build
 
-serve: install
-    @bundle exec jekyll serve --livereload
+serve: setup
+    bundle exec jekyll serve --livereload
     
-install:
-    @bundle install
+setup:
+    bundle setup
     
 check-data:
     cd _data && just check-all

@@ -1,0 +1,33 @@
+# Runs all data validation checks
+check-all: check-pluslife-checklist
+
+# Checks the Pluslife checklist data
+check-pluslife-checklist:
+    #!/usr/bin/env python3
+    FILE = 'pluslife-checklist.yml'
+
+    import yaml
+    data = yaml.safe_load(open(FILE))
+    
+    # check that all test types have the same number of items in each section
+    testtypes = [list(tt.keys())[0] for tt in data['testtypes']]
+    checklist = data['checklist']
+
+    for section in checklist:
+        assert 'title' in section and 'items' in section, f"Section '{section}' must have title and items"
+
+        section_name = section.get('title')
+        items = section.get('items')
+
+        counts = {tt: 0 for tt in testtypes}
+        for item in items:
+            item_stripped = item.strip()
+            for tt in testtypes:
+                if item_stripped.startswith(f'.{tt}'):
+                    counts[tt] += 1
+
+        for tt in testtypes:
+            if counts[tt] != counts[testtypes[0]]:
+                print(f"Section '{section_name}' has uneven item counts for test type '{tt}': {counts[tt]} != {counts[testtypes[0]]}")
+                exit(1)
+    print(f"{FILE}: OK")

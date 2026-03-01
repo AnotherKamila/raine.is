@@ -5,22 +5,24 @@ add_to_head: <link rel="stylesheet" href="/assets/css/checklist.css" />
 
 The [Pluslife MiniDock](https://www.pluslife.com/productinfo/1207325.html)
 is awesome -- its sensitivity to COVID-19 is comparable to a good PCR
-test and is absolutely batshit for something that fits into my pocket
-when you think about it.
+test and good enough to have some safety buffer between detection and being
+infectious.
 
-This is a checklist that summarizes the important steps when running a test.
+This here is an interactive checklist that summarizes the important steps when
+running a test.
 
 <!--more-->
 
 This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
+[virus.sucks app](https://virus.sucks/pluslife_app/)
+
 <!-- Beware: the template code is disgusting. -->
 
 {% assign checklist_data = site.data["pluslife-checklist"] %}
 
 {% for testtype in checklist_data.testtypes %}
-  {% # hack for the id: name structure in yaml }
   {% for pair in testtype %}
     {% assign test_id = pair[0] %}
     {% assign test_name = pair[1] %}

@@ -23,7 +23,9 @@ checklist:
       - Single-use gloves
       - Goggles
       - Power bank / power supply
-      - Device with Chrome open to [the virus.sucks app](https://virus.sucks/pluslife_app/),| set to stay awake/keep screen on
+      # Note that this is not a link because a link there makes keyboard
+      # navigation weird (makes this item different from the others).
+      - Device with Chrome open to the virus.sucks app,| set to stay awake/keep screen on
 
   - title: Warm up the device
     items:
