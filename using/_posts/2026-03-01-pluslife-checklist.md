@@ -27,7 +27,10 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
     {% for section in checklist_data.checklist %}
       {% capture section_id %}checklist-{{ variant[0] }}-{{ section.title | slugify }}{% endcapture %}
       <section class="checklist" id="{{ section_id }}">
-        <h3>{{ forloop.index }}. {{ section.title }}</h3>
+        <h3>
+          {{ forloop.index }}. {{ section.title }}
+          <a class="checklist-anchor" href="#{{ section_id }}" aria-label="Link to {{ section.title }}">#</a>
+        </h3>
         <ul>
           {% for item in section.items %}
             {% assign item_stripped = item | strip %}
@@ -67,3 +70,47 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 {% endfor %}
 
 [Patches welcome!](https://github.com/AnotherKamila/raine.is/blob/main/_data/pluslife-checklist.yml)
+
+<script>
+  (() => {
+    const sections_sel = document.querySelectorAll('.checklist');
+
+    const updateChecklistSectionState = (section) => {
+      const checkboxes = section.querySelectorAll('input[type="checkbox"]');
+      const allChecked = Array.from(checkboxes).every((checkbox) => checkbox.checked);
+      console.log('allChecked:', allChecked)
+
+      section.classList.toggle('complete', allChecked);
+
+      // If all items in this section are checked, go to the next incomplete section via location.hash (by using .complete class)
+      if (allChecked) {
+        const sections = Array.from(sections_sel);
+        const currentIndex = sections.indexOf(section);
+        for (let i = currentIndex + 1; i < sections.length; i++) {
+          if (!sections[i].classList.contains('complete')) {
+            // Go to the next incomplete section
+            location.hash = '';
+            sections[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Set hash if section has heading with id
+            const heading = sections[i].querySelector('h3[id]');
+            if (heading && heading.id) {
+              location.hash = '#' + heading.id;
+            }
+            break;
+          }
+        }
+      }
+    };
+
+    sections_sel.forEach((section) => {
+      const checkboxes = section.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+          updateChecklistSectionState(section);
+        });
+      });
+
+      updateChecklistSectionState(section);
+    });
+  })();
+</script>

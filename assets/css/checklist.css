@@ -35,6 +35,25 @@
     margin: 0 0 0.7rem;
     font-size: 1.05rem;
     line-height: 1.35;
+    font-weight: bold;
+}
+
+.checklist.complete h3 {
+    color: #2e7d32; /* green */
+}
+
+.checklist .checklist-anchor {
+    margin-left: 0.35rem;
+    opacity: 0;
+    color: #6b7280;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+
+.checklist h3:hover .checklist-anchor,
+.checklist .checklist-anchor:focus,
+.checklist .checklist-anchor:focus-visible {
+    opacity: 1;
 }
 
 .checklist ul {
