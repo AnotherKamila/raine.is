@@ -95,14 +95,17 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
         const currentIndex = sections.indexOf(section);
         for (let i = currentIndex + 1; i < sections.length; i++) {
           if (!sections[i].classList.contains('complete')) {
-            // Go to the next incomplete section
-            location.hash = '';
+            // Go to the next incomplete section:
+            // ...scroll
             sections[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // Set hash if section has heading with id
+
+            // ...set location.hash
             const heading = sections[i].querySelector('h3[id]');
-            if (heading && heading.id) {
-              location.hash = '#' + heading.id;
-            }
+            location.hash = '#' + heading.id;
+
+            // ...and update keyboard focus
+            sections[i].querySelector('input[type="checkbox"]').focus();
+
             break;
           }
         }
