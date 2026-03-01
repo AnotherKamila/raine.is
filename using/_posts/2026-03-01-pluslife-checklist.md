@@ -16,7 +16,7 @@ running a test.
 This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
-[virus.sucks app](https://virus.sucks/pluslife_app/)
+[Virus.sucks app](https://virus.sucks/pluslife_app/) (needs Chrome)
 
 <!-- Beware: the template code is disgusting. -->
 
