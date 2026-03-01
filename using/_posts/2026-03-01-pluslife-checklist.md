@@ -15,6 +15,8 @@ This is a checklist that summarizes the important steps when running a test.
 This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
+<!-- Beware: the template code is disgusting. -->
+
 {% assign checklist_data = site.data["pluslife-checklist"] %}
 
 {% for variant in checklist_data.variants %}
@@ -63,3 +65,5 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
 </details>
 {% endfor %}
+
+[Patches welcome!](https://github.com/AnotherKamila/raine.is/blob/main/_data/pluslife-checklist.yml)
