@@ -1,8 +1,27 @@
 # Runs all data validation checks
 check-all: check-pluslife-checklist
 
+SCHEMA_OK := "{filename}: schema OK"
+DATA_OK   := "{filename}: data   OK"
+
+check-schema file:
+    #!/usr/bin/env python3
+    import json
+    import yaml
+    import jsonschema
+    import os
+
+    filename = "{{file}}"
+    basename, ext = os.path.splitext(filename)
+    schema = basename + '.schema.json'
+    loader = json.load if ext == 'json' else yaml.safe_load
+    data = loader(open(filename))
+    schema = json.load(open(schema))
+    jsonschema.validate(data, schema)
+    print("{{SCHEMA_OK}}".format(filename=filename))
+
 # Checks the Pluslife checklist data
-check-pluslife-checklist:
+check-pluslife-checklist: (check-schema "pluslife-checklist.yml")
     #!/usr/bin/env python3
     FILE = 'pluslife-checklist.yml'
 
@@ -14,10 +33,8 @@ check-pluslife-checklist:
     checklist = data['checklist']
 
     for section in checklist:
-        assert 'title' in section and 'items' in section, f"Section '{section}' must have title and items"
-
-        section_name = section.get('title')
-        items = section.get('items')
+        section_name = section['title']
+        items = section['items']
 
         counts = {tt: 0 for tt in testtypes}
         for item in items:
@@ -30,4 +47,4 @@ check-pluslife-checklist:
             if counts[tt] != counts[testtypes[0]]:
                 print(f"Section '{section_name}' has uneven item counts for test type '{tt}': {counts[tt]} != {counts[testtypes[0]]}")
                 exit(1)
-    print(f"{FILE}: OK")
+    print("{{DATA_OK}}".format(filename=FILE))
