@@ -1,6 +1,7 @@
-variants:
-  strep: Strep A
-  flu: Influenza A/Influenza B/RSV
+testtypes:
+  - covid: SARS-CoV-2
+  - strep: Strep A
+  - flu: Influenza A/Influenza B/RSV
 
 checklist:
   - title: Prepare materials
@@ -10,8 +11,12 @@ checklist:
       - Power cable
       - Card/vial stand
       - Reaction card
+      - .strep Strep A reaction card
+      - .flu Influenza A/Influenza B/RSV reaction card
+      - .covid SARS-CoV-2 reaction card
       - .strep Nucleic acid releasing agent **02** vial
       - .flu Nucleic acid releasing agent **01** vial
+      - .covid Nucleic acid releasing agent **01** vial
       - Vial cap
       - Sampling swab
       - Waste bag
@@ -31,6 +36,7 @@ checklist:
       - Wash or disinfect your hands.
       - .strep **Oropharyngeal** swab -- swipe at least 3 times each from the posterior pharynx and tonsils.
       - .flu **Nasal** swab -- rotate 3x in each nostril. | Nasopharyngeal and oropharyngeal swab also OK.
+      - .covid **Nasal** swab -- rotate 3x in each nostril. | Nasopharyngeal and oropharyngeal swab also OK.
 
   - title: Prepare sample
     items:
@@ -68,6 +74,7 @@ checklist:
       - Connect the device to the virus.sucks app.
       - .strep Select the Strep A test in the app.
       - .flu Select the Flu A/Flu B/RSV test in the app.
+      - .covid Select the SARS-CoV-2 test in the app.
       - Insert the card into the device and close the lid.
       - Start the test **from the app**.
       - Make sure the **screen stays on** while the test is running.
