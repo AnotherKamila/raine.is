@@ -1,3 +1,4 @@
+$schema: https://raine.is/paranoid/pluslife-checklist.schema.json
 testtypes:
   - covid: SARS-CoV-2
   - strep: Strep A

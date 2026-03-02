@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raine.is/paranoid/pluslife-checklist.schema.json",
+  "title": "Pluslife Checklists",
+  "description": "A checklist for the Pluslife test",
+  "type": "object",
+  "properties": {
+    "testtypes": {
+      "type": "array",
+      "description": "The list of test types covered by the checklist",
+      "items": {
+        "type": "object",
+        "patternProperties": {
+          "^[a-z-]+$": {
+            "type": "string"
+          }
+        },
+        "minProperties": 1,
+        "maxProperties": 1,
+        "additionalProperties": false
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "description": "A list of checklist sections for the Pluslife test",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the checklist section"
+          },
+          "items": {
+            "type": "array",
+            "description": "A list of items in the checklist section",
+            "items": {
+              "type": "string",
+              "description": "An item in the checklist section"
+            }
+          }
+        },
+        "required": [
+          "title",
+          "items"
+        ]
+      }
+    }
+  },
+  "required": [
+    "testtypes",
+    "checklist"
+  ]
+}

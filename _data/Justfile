@@ -3,6 +3,8 @@ check-all: check-pluslife-checklist
 
 SCHEMA_OK := "{filename}: schema OK"
 DATA_OK   := "{filename}: data   OK"
+EXIT_ERR  := "42"
+EXIT_LAZY := "47"
 
 check-schema file:
     #!/usr/bin/env python3
@@ -10,12 +12,23 @@ check-schema file:
     import yaml
     import jsonschema
     import os
+    import sys
 
     filename = "{{file}}"
     basename, ext = os.path.splitext(filename)
     schema = basename + '.schema.json'
     loader = json.load if ext == 'json' else yaml.safe_load
     data = loader(open(filename))
+    if '$schema' in data:
+        schema_url = data['$schema']
+        if 'raine.is/paranoid' in schema_url:
+            schema = os.path.basename(schema_url)
+        else:
+            print("error: I can't be bothered to download schemas yet", file=sys.stderr)
+            exit({{EXIT_LAZY}})
+    else:
+        print(f"error: {filename}: $schema field missing", file=sys.stderr)
+        exit({{EXIT_ERR}})
     schema = json.load(open(schema))
     jsonschema.validate(data, schema)
     print("{{SCHEMA_OK}}".format(filename=filename))
