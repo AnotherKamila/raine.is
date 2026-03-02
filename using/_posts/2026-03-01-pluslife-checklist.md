@@ -16,9 +16,11 @@ running a test.
 ⚠️ This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
 
-⚠️ Clean up immediately to avoid contamination.
+💡 The <mark class="time">marked part</mark> is the part of the procedure that is **especially time-sensitive**. If you take too long, you will get an invalid or false result.
 
-[Virus.sucks app](https://virus.sucks/pluslife_app/) (needs Chrome)
+🧪 [Virus.sucks app](https://virus.sucks/pluslife_app/) (needs Chrome)
+
+⚠️ **Clean up immediately to avoid contamination.**
 
 <!-- Beware: the template code is disgusting. -->
 
@@ -100,11 +102,11 @@ manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
             // ...scroll
             sections[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-            // ...set location.hash
-            location.hash = '#' + sections[i].id;
+            // ...update URL hash without triggering a jump
+            history.replaceState(null, '', '#' + sections[i].id);
 
             // ...and update keyboard focus
-            sections[i].querySelector('input[type="checkbox"]').focus();
+            sections[i].querySelector('.checklist-anchor').focus();
 
             break;
           }

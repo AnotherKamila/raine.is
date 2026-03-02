@@ -4,6 +4,8 @@ testtypes:
   - strep: Strep A
   - flu: Influenza A/Influenza B/RSV
 
+# Use <mark /> to mark time-sensitive parts of the procedure.
+# (It is an empty tag so that it doesn't interfere with the markdown parsing.)
 checklist:
   - title: Prepare materials
     items:
@@ -68,26 +70,25 @@ checklist:
       - Do not touch the surface of the test chambers on the card.
       - Open the card packaging now. | Be careful to only handle the card by the edges so you don't accidentally touch the chambers. Avoid exposing the card to bright light for extended periods.
       - Unscrew cap from card.
-      - From this point you are on the clock. | If you wait too long, you will get an invalid or false result.
 
-  - title: Transfer sample to the reaction card
+  - title: <mark />Transfer sample to the reaction card
     items:
-      - Slowly drip the vial solution on the inside wall of the neck of card, until the liquid is **BETWEEN** the two lines.
-      - Screw on the cap until airtight.
-      - Check that the chambers are mostly full. | If not, unscrew the cap and try again.
-      - Allow the card to stand still for 15 seconds | to let gravity deal with bubbles.
-      - Firmly press the air button on top of the card cap. | Ensure all chambers are **completely** filled with liquid.
+      - <mark />Slowly drip the vial solution on the inside wall of the neck of card, until the liquid is **BETWEEN** the two lines.
+      - <mark />Screw on the cap until airtight.
+      - <mark />Check that the chambers are mostly full. | If not, unscrew the cap and try again.
+      - <mark />Allow the card to stand still for 15 seconds | to let gravity deal with bubbles.
+      - <mark />Firmly press the air button on top of the card cap. | Ensure all chambers are **completely** filled with liquid.
 
-  - title: Mixing
+  - title: <mark />Mixing
     items:
-      - Quickly shake the card up and down 10 times within 5 seconds.| Ensure the pellets are dissolved.
-      - Check that no chamber is more than ⅓ bubbles.
+      - <mark />Quickly shake the card up and down 10 times within 5 seconds.| Ensure the pellets are dissolved.
+      - <mark />Check that no chamber is more than ⅓ bubbles.
 
-  - title: Amplification
+  - title: <mark />Amplification
     items:
-      - Check the device is warmed up and ready. | Check that power LED is solid blue; if flashing red, it is still warming up.
-      - Insert the card into the device and close the lid.
-      - Start the test **from the app**.
+      - <mark />Check the device is warmed up and ready. | Check that power LED is solid blue; if flashing red, it is still warming up.
+      - <mark />Insert the card into the device and close the lid.
+      - <mark />Start the test **from the app**.
       - Make sure the **screen stays on** while the test is running.
       - Read the result after 35 min.
 
