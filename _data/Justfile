@@ -1,6 +1,8 @@
 # Runs all data validation checks
 check-all: check-pluslife-checklist
 
+LOCAL_SCHEMA_URL := "https://raine.is/paranoid/"
+
 SCHEMA_OK := "{filename}: schema OK"
 DATA_OK   := "{filename}: data   OK"
 EXIT_ERR  := "42"
@@ -16,12 +18,11 @@ check-schema file:
 
     filename = "{{file}}"
     basename, ext = os.path.splitext(filename)
-    schema = basename + '.schema.json'
     loader = json.load if ext == 'json' else yaml.safe_load
     data = loader(open(filename))
     if '$schema' in data:
         schema_url = data['$schema']
-        if 'raine.is/paranoid' in schema_url:
+        if '{{LOCAL_SCHEMA_URL}}' in schema_url:
             schema = os.path.basename(schema_url)
         else:
             print("error: I can't be bothered to download schemas yet", file=sys.stderr)

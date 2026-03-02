@@ -13,8 +13,10 @@ running a test.
 
 <!--more-->
 
-This is just for quick reference and it **does not replace reading the
+⚠️ This is just for quick reference and it **does not replace reading the
 manual** or [the virus.sucks notes](https://virus.sucks/pluslife_en/).
+
+⚠️ Clean up immediately to avoid contamination.
 
 [Virus.sucks app](https://virus.sucks/pluslife_app/) (needs Chrome)
 
