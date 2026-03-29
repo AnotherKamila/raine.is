@@ -11,6 +11,7 @@ serve: setup check-data
     
 # Install dependencies
 setup:
+    bundle config set --local path '.bundle'
     bundle install
     
 # Validate data files
