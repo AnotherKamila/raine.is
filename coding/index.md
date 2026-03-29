@@ -5,7 +5,13 @@ canonical_url: /coding
 menu_order: 20
 ---
 
-Kamila is coding. Um. A lot.
+## Current
+
+[Aranet4Wear](aranet4wear): Displays Aranet4 sensor data on a smartwatch.
+
+----------
+
+## Out of date, unmaintained, old stuff
 
 As of now I have about 80 GitHub repos, because I am messy. These are the large projects I consider active (though maybe they don't look like that right now...):
 
