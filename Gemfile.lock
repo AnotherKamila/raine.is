@@ -285,7 +285,7 @@ DEPENDENCIES
   github-pages (~> 232)
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 3.2.3p157
 
 BUNDLED WITH
    2.2.22
