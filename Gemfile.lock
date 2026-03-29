@@ -283,6 +283,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   github-pages (~> 232)
+  jekyll-github-metadata
 
 RUBY VERSION
    ruby 3.2.3p157

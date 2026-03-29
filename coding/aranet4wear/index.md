@@ -47,7 +47,7 @@ public store:
 3. **Download:** Use the direct link provided in the opt-in page. _Note that this only works on
    the web version of Google play, not in the app!_
 
-[Contact me](~raine/dev@lists.sr.ht) if you need help!
+[Contact me](mailto:~raine/dev@lists.sr.ht) if you need help!
 
 [Known Issues](https://todo.sr.ht/~raine/aranet4wear?search=status%3Aopen+label%3Abug) |
 [Feature Requests and Enhancements](https://todo.sr.ht/~raine/aranet4wear?search=status%3Aopen+!label%3Abug)
@@ -65,7 +65,7 @@ Contributions are welcome!
 * **Found a bug? Have a feature request?** Open a [ticket](https://todo.sr.ht/~raine/aranet4wear).
 * **Want to code?** Submit a patch.
 * **Want to help with translations?** I'm still figuring this out,
-  but [contact me](~raine/dev@lists.sr.ht), we can figure it out together :D
+  but [contact me](mailto:~raine/dev@lists.sr.ht), we can figure it out together :D
 
 Testing also really helps.
 

@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll-github-metadata"
 #gem "kramdown-parser-gfm"
 
 # If you have any plugins, put them here!
