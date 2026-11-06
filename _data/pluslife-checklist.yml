@@ -33,14 +33,14 @@ checklist:
     items:
       - Check power bank charge level.
       - Keep phone and other strong electromagnetic fields away | from the device.
+      - Connect power to the device.
+      - Press the button on the front to start warm-up. | Takes about 2 min.
       - Check expiration date on the reaction card.
       - Check expiration date on the vial.
       - .strep Place the vial into the stand. | Double-check that this is vial **02**.
       - .flu   Place the vial into the stand. | Double-check that this is vial **01**.
       - .covid Place the vial into the stand. | Double-check that this is vial **01**.
       - Open up the waste bag.
-      - Connect power to the device.
-      - Press the button on the front to start warm-up. | Takes about 2 min.
       - Connect the device to the virus.sucks app.
       - .strep Select the Strep A test in the app.
       - .flu   Select the Flu A/Flu B/RSV test in the app.
